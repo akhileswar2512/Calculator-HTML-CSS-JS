@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CALCULATOR</title>
+<link rel="stylesheet" href="light.css" id="theme"/>
+
+
+
+</head>
+<body>
+     <center>
+     <div class="container"><button onclick="switchtheme" id="darkmode">Darkmode</button>
+        <h1>Calculator</h1>
+    
+<div class="margin-row">
+    <input type="text" name="result" class="result" id="result" placeholder="result" readonly/>
+    <input type="button" class="clear"  onclick="clearscreen()" value="c">
+</div>
+<div class="margin-row">
+    <input type="button" value="1" onclick="livescreen(1)" id="one"/>
+    <input type="button" value="2" onclick="livescreen(2)" id="two"/>
+    <input type="button" value="3" onclick="livescreen(3)" id="three"/>
+    <input type="button" value="+" onclick="livescreen('+')"/>
+</div> 
+<div class="margin-row">
+    <input type="button" value="4" onclick="livescreen(4)" id="four"/>
+    <input type="button" value="5" onclick="livescreen(5)" id="five"/>
+    <input type="button" value="6" onclick="livescreen(6)" id="six"/>
+    <input type="button" value="-" onclick="livescreen('-')"/>
+</div>  
+<div class="margin-row">
+    <input type="button" value="7" onclick="livescreen(7)" id="seven"/>
+    <input type="button" value="8" onclick="livescreen(8)" id="eight"/>
+    <input type="button" value="9" onclick="livescreen(9)" id="nine"/>
+    <input type="button" value="*" onclick="livescreen('*')"/>
+</div>  
+<div class="margin-row">
+    <input type="button" value="/" onclick="livescreen('/')"/>
+    <input type="button" value="0" onclick="livescreen(0)" id="zero"/>
+    <input type="button" value="." onclick="livescreen('.')"/>
+    <input type="button" value="=" onclick="result.value=eval(result.value)"/> 
+</div>
+</div>
+
+</center>
+        
+<script src="akhil.js" async defer></script>
+
+</body>
+</html>
